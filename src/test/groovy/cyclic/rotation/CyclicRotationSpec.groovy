@@ -28,4 +28,14 @@ class CyclicRotationSpec extends Specification {
         [1,2,3,4] == new Solution().solution(inputArray,0)
     }
 
+    def "Test maximal 5 elements and rotation is 10"(){
+        given:
+        def inputArray = [1,2,3,4,5] as int[]
+        when:
+        def result = new Solution().solution(inputArray, 10)
+        then:
+        [1,2,3,4,5] == result
+
+    }
+
 }

@@ -1,7 +1,7 @@
 package cyclic.rotation;
 
 /**
- * 75%
+ * 100%
  */
 
 public class Solution {
@@ -11,24 +11,18 @@ public class Solution {
         int arrayLength = A.length;
         if (K == arrayLength)
             return A;
-        if(A.length ==0 || A.length ==1)
+        if (A.length == 0 || A.length == 1)
             return A;
-
-
         int[] rotatedArray = new int[arrayLength];
-
         for (int i = 0; i < arrayLength; ++i) {
             int indexAfterRotationByK = i + K;
             if (indexAfterRotationByK < arrayLength) {
                 rotatedArray[indexAfterRotationByK] = A[i];
-            }
-            else{
-               int indexOverflowed = indexAfterRotationByK - arrayLength;
+            } else {
+                int indexOverflowed = indexAfterRotationByK % arrayLength;
                 rotatedArray[indexOverflowed] = A[i];
-
             }
         }
-
         return rotatedArray;
     }
 }
