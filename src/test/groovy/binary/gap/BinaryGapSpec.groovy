@@ -1,4 +1,4 @@
-package binarygap
+package binary.gap
 
 import spock.lang.Specification
 
