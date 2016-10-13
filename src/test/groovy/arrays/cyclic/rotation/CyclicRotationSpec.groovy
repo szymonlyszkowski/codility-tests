@@ -1,5 +1,6 @@
-package cyclic.rotation
+package arrays.cyclic.rotation
 
+import arrays.cyclic.rotation.Solution
 import spock.lang.Specification
 
 
@@ -12,20 +13,20 @@ class CyclicRotationSpec extends Specification {
         given:
         def inputArray = [1,2,3] as int []
         expect:
-        [3,1,2] == new Solution().solution(inputArray,1)
-        [2,3,1] == new Solution().solution(inputArray,2)
-        [1,2,3] == new Solution().solution(inputArray,3)
-        [1,2,3] == new Solution().solution(inputArray,0)
+         new Solution().solution(inputArray,1) == [3,1,2]
+         new Solution().solution(inputArray,2) == [2,3,1]
+         new Solution().solution(inputArray,3) == [1,2,3]
+         new Solution().solution(inputArray,0) == [1,2,3]
     }
 
     def "Test should rotate array [1,2,3,4]"(){
         given:
         def inputArray = [1,2,3,4] as int []
         expect:
-        [4,1,2,3] == new Solution().solution(inputArray,1)
-        [3,4,1,2] == new Solution().solution(inputArray,2)
-        [2,3,4,1] == new Solution().solution(inputArray,3)
-        [1,2,3,4] == new Solution().solution(inputArray,0)
+         new Solution().solution(inputArray,1) == [4,1,2,3]
+         new Solution().solution(inputArray,2) == [3,4,1,2]
+         new Solution().solution(inputArray,3) == [2,3,4,1]
+         new Solution().solution(inputArray,0) == [1,2,3,4]
     }
 
     def "Test maximal 5 elements and rotation is 10"(){
@@ -34,7 +35,7 @@ class CyclicRotationSpec extends Specification {
         when:
         def result = new Solution().solution(inputArray, 10)
         then:
-        [1,2,3,4,5] == result
+        result == [1,2,3,4,5]
 
     }
 

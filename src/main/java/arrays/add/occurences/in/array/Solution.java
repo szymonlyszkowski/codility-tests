@@ -1,4 +1,4 @@
-package add.occurences.in.array;
+package arrays.add.occurences.in.array;
 
 import java.util.Arrays;
 

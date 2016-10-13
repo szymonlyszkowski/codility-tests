@@ -1,5 +1,6 @@
-package binary.gap
+package iterations.binary.gap
 
+import iterations.binary.gap.binary.gap.Solution
 import spock.lang.Specification
 
 /**

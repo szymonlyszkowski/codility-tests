@@ -1,4 +1,4 @@
-package cyclic.rotation;
+package arrays.cyclic.rotation;
 
 /**
  * 100%
