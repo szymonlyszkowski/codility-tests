@@ -1,6 +1,7 @@
-package time.complexity.tape.equilibrium
+package time.complexity.tape.equlibrium
 
 import spock.lang.Specification
+import time.complexity.tape.equlibrium.Solution
 
 
 /**

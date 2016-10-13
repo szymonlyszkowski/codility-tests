@@ -1,4 +1,4 @@
-package time.complexity.tape.equilibrium;
+package time.complexity.tape.equlibrium;
 
 import java.util.Arrays;
 

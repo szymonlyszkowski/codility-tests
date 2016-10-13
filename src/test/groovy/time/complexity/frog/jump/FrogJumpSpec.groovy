@@ -1,4 +1,4 @@
-package time.complexity.tape.equilibrium.frog.jump
+package time.complexity.frog.jump
 
 import spock.lang.Specification
 
