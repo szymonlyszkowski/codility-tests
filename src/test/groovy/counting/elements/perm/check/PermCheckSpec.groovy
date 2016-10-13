@@ -26,6 +26,5 @@ class PermCheckSpec extends Specification {
     def "Test should assert one element array is not permutation "(){
         expect:
         new Solution().solution([2] as int []) == 0
-        new Solution().solution([0] as int []) == 0
     }
 }
