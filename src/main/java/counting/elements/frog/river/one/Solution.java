@@ -1,21 +1,21 @@
 package counting.elements.frog.river.one;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Correctness 100% , Performance 40%.
+ * Correctness 100% , Performance 100%.
+ * Do not use ArrayList during case where all elements are distinct.
+ * In such case we should use HashSet, performance is much better.
  */
 public class Solution {
     public int solution(int X, int[] A){
-        List requiredLeaves = new ArrayList<Integer>();
+        Set requiredLeaves = new HashSet<Integer>();
         for(int i=0; i<X; ++i){
             requiredLeaves.add(i+1);
         }
         for(int i=0; i<A.length; ++i){
-            if(i<A.length-1 && A[i]== A[i+1] && !requiredLeaves.contains(new Integer(A[i])))
-                continue;
-            if(A[i]<=X && requiredLeaves.contains(new Integer(A[i]))){
+            if(requiredLeaves.contains(new Integer(A[i]))){
                 requiredLeaves.remove(new Integer(A[i]));
             }
             if(requiredLeaves.isEmpty())
