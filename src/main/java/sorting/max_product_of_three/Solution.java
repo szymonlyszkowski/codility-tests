@@ -12,9 +12,6 @@ public class Solution {
         }
         Arrays.sort(A);
 
-        for (int i = 0; i < A.length; ++i) {
-
-        }
         int maxUsingNegativeValue = A[0] * A[1] * A[A.length - 1];
         int maxUsingPositiveValue = A[A.length - 1] * A[A.length - 2] * A[A.length - 3];
 
