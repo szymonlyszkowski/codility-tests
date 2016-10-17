@@ -3,7 +3,7 @@ package stacksAndQueues.nesting;
 import java.util.Stack;
 
 /**
- * Created by szymonidas on 10/17/16.
+ * 100%
  */
 public class Solution {
     public int solution(String S) {
